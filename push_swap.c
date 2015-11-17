@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Mon Nov 16 15:08:57 2015 Baptiste veyssiere
-** Last update Mon Nov 16 22:44:55 2015 Baptiste veyssiere
+** Last update Tue Nov 17 10:44:22 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
@@ -22,6 +22,14 @@ int     check(struct s_list *list)
   return (0);
 }
 
+void	space_or_backspace(struct s_list *list)
+{
+  if (list->next != NULL)
+    my_putchar(32);
+  else
+    my_putchar('\n');
+}
+
 void	main(int ac,char **av)
 {
   struct s_list	*list1;
@@ -32,20 +40,20 @@ void	main(int ac,char **av)
   list2 = NULL;
   i = ac - 1;
   while (i > 0)
-    {
-      my_put_in_list(&list1, av[i]);
-      i--;
-    }
+    my_put_in_list(&list1, av[i--]);
   while (check(list1) != 0)
     {
       list2_filler(list1, list2);
       push(list1, &list2);
+      my_putstr("pb ");
       list1 = list1->next;
     }
   while (list2 != NULL)
     {
       push(list2, &list1);
+      my_putstr("pa");
+      space_or_backspace(list2);
       list2 = list2->next;
     }
-  my_show_list(list1);
+  // my_show_list(list1);
 }

@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Mon Nov 16 21:56:41 2015 Baptiste veyssiere
-** Last update Mon Nov 16 22:43:39 2015 Baptiste veyssiere
+** Last update Tue Nov 17 10:39:41 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
@@ -32,5 +32,8 @@ void     list2_filler(struct s_list *list1, struct s_list *list2)
 
   min = who_is_min(list1);
   while (my_getnbr(list1->nbr) != min)
-    rotate_left(list1);
+    {
+      rotate_left(list1);
+      my_putstr("ra ");
+    }
 }
