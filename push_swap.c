@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Mon Nov 16 15:08:57 2015 Baptiste veyssiere
-** Last update Tue Nov 17 10:44:22 2015 Baptiste veyssiere
+** Last update Tue Nov 17 11:38:10 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
@@ -55,5 +55,4 @@ void	main(int ac,char **av)
       space_or_backspace(list2);
       list2 = list2->next;
     }
-  // my_show_list(list1);
 }
