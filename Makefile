@@ -5,7 +5,7 @@
 ## Login   <VEYSSI_B@epitech.net>
 ## 
 ## Started on  Mon Nov  2 12:03:04 2015 Baptiste veyssiere
-## Last update Mon Nov 16 22:48:23 2015 Baptiste veyssiere
+## Last update Wed Nov 18 18:24:55 2015 Baptiste veyssiere
 ##
 
 NAME	= push_swap
@@ -25,7 +25,7 @@ OBJS	= $(SRCS:.c=.o)
 all:	$(NAME)
 
 $(NAME):
-	cc -c $(SRCS)
+	cc -c $(SRCS) -I./include
 	cc -o $(NAME) $(OBJS)
 
 clean:
