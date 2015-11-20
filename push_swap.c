@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Mon Nov 16 15:08:57 2015 Baptiste veyssiere
-** Last update Thu Nov 19 17:27:41 2015 Baptiste veyssiere
+** Last update Fri Nov 20 09:26:59 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
@@ -45,7 +45,8 @@ void	function_free(struct s_list *list1, struct s_list *list2)
     list2 = list2->next;
 }
 
-void	push_swap(int ac, char **av, struct s_list *list1, struct s_list *list2)
+void	push_swap(int ac, char **av, struct s_list *list1,
+		  struct s_list *list2)
 {
   struct s_list	*adress;
   int           i;
