@@ -5,7 +5,7 @@
 ## Login   <VEYSSI_B@epitech.net>
 ## 
 ## Started on  Mon Nov  2 12:03:04 2015 Baptiste veyssiere
-## Last update Wed Nov 18 18:24:55 2015 Baptiste veyssiere
+## Last update Fri Nov 20 16:00:22 2015 Baptiste veyssiere
 ##
 
 NAME	= push_swap
@@ -14,8 +14,6 @@ SRCS	= list_manager.c \
 	my_getnbr.c \
 	my_putchar.c \
 	my_putstr.c \
-	my_strcpy.c \
-	my_strlen.c \
 	operation_list.c \
 	other_functions.c \
 	push_swap.c
