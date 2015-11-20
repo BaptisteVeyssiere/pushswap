@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Mon Nov 16 15:10:24 2015 Baptiste veyssiere
-** Last update Thu Nov 19 17:28:16 2015 Baptiste veyssiere
+** Last update Fri Nov 20 11:07:26 2015 Baptiste veyssiere
 */
 
 #ifndef LIST_H_
@@ -19,4 +19,4 @@ struct	s_list
 
 int	my_put_in_list(struct s_list **list, int nbr);
 
-#endif
+#endif /* LIST_H_ */
