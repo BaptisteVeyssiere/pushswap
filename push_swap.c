@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Mon Nov 16 15:08:57 2015 Baptiste veyssiere
-** Last update Fri Nov 20 09:26:59 2015 Baptiste veyssiere
+** Last update Fri Nov 20 10:47:54 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
@@ -74,7 +74,7 @@ void	push_swap(int ac, char **av, struct s_list *list1,
   function_free(list1, list2);
 }
 
-void	main(int ac,char **av)
+int	main(int ac,char **av)
 {
   struct s_list *list1;
   struct s_list *list2;
@@ -86,5 +86,6 @@ void	main(int ac,char **av)
   if (ac > 1)
     push_swap(ac, av, list1, list2);
   else
-    my_putstr("Please enter some numbers\n");
+    return (1);
+  return (0);
 }
