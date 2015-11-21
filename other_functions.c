@@ -1,39 +1,63 @@
 /*
 ** other_functions.c for pushswap in /home/VEYSSI_B/rendu/CPE_2015_Pushswap/test
-** 
+**
 ** Made by Baptiste veyssiere
 ** Login   <VEYSSI_B@epitech.net>
-** 
+**
 ** Started on  Mon Nov 16 21:56:41 2015 Baptiste veyssiere
-** Last update Thu Nov 19 17:22:12 2015 Baptiste veyssiere
+** Last update Sat Nov 21 12:20:42 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
 #include "list.h"
 
-int     who_is_min(struct s_list *list)
+t_min     *who_is_min(t_list *list)
 {
-  int   min;
+  t_min		*min;
+  int		buffer;
 
-  min = list->nbr;
+  buffer = list->nbr;
+  min = malloc(sizeof(*min));
+  min->min = list->nbr;
+  min->pos = 0;
   list = list->next;
-  while (list != NULL)
+  while (list->nbr != buffer)
     {
-      if (list->nbr < min)
-        min = list->nbr;
+      if (list->nbr < min->min)
+	min->min = list->nbr;
       list = list->next;
+      min->pos += 1;
     }
   return (min);
 }
 
-void     list2_filler(struct s_list *list1, struct s_list *list2)
+void	space(int *i)
 {
-  int   min;
+  if (*i == 0)
+    *i = 1;
+  else
+    my_putchar(' ');
+}
 
-  min = who_is_min(list1);
-  while (list1->nbr != min)
+void     list2_filler(t_list **list1, t_list **list2, int ac, int *i)
+{
+  t_min   *min;
+
+  min = who_is_min(*list1);
+  while ((*list1)->nbr != min->min)
     {
-      rotate_left(list1);
-      my_putstr("ra ");
+      if (min->pos < ac / 2)
+	{
+	  rotate_left(list1);
+	  space(i);
+	  my_putstr("ra");
+	}
+      else
+	{
+	  rotate_right(list1);
+	  space(i);
+	  my_putstr("rra");
+	}
     }
+  free(min);
 }

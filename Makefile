@@ -1,11 +1,11 @@
 ##
 ## Makefile for Push_swap in /home/VEYSSI_B/rendu/CPE_2015_Pushswap
-## 
+##
 ## Made by Baptiste veyssiere
 ## Login   <VEYSSI_B@epitech.net>
-## 
+##
 ## Started on  Mon Nov  2 12:03:04 2015 Baptiste veyssiere
-## Last update Fri Nov 20 16:00:22 2015 Baptiste veyssiere
+## Last update Sat Nov 21 12:19:17 2015 Baptiste veyssiere
 ##
 
 NAME	= push_swap

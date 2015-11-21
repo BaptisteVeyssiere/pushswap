@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 ** 
 ** Started on  Fri Oct  9 11:36:28 2015 Baptiste veyssiere
-** Last update Thu Oct 22 21:20:19 2015 Baptiste veyssiere
+** Last update Fri Nov 20 19:19:14 2015 Baptiste veyssiere
 */
 
 int	power_up(char *str, int *length, int *key, int *power)
@@ -20,6 +20,7 @@ int	power_up(char *str, int *length, int *key, int *power)
       *power *= 10;
       *length += 1;
     }
+  return (0);
 }
 
 int	my_getnbr(char *str)
