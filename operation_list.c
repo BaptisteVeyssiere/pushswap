@@ -5,7 +5,7 @@
 ** Login   <VEYSSI_B@epitech.net>
 **
 ** Started on  Mon Nov 16 16:15:05 2015 Baptiste veyssiere
-** Last update Sat Nov 21 12:20:30 2015 Baptiste veyssiere
+** Last update Sat Nov 21 14:32:27 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
@@ -16,15 +16,15 @@ void	rotate_right(t_list **list)
   *list = (*list)->prev;
 }
 
-void    rotate_left(t_list **list)
+void	rotate_left(t_list **list)
 {
   *list = (*list)->next;
 }
 
 int	pb(t_list **list1, t_list **list2, int *i)
 {
-  t_list *elem;
-  t_list *previous;
+  t_list	*elem;
+  t_list	*previous;
 
   if (elem == NULL)
     return (1);
@@ -42,9 +42,9 @@ int	pb(t_list **list1, t_list **list2, int *i)
 
 int	pa(t_list **list1, t_list **list2)
 {
-  t_list *elem;
+  t_list	*elem;
   t_list	*buffer;
-  t_list *previous;
+  t_list	*previous;
 
   if (elem == NULL)
     return (1);

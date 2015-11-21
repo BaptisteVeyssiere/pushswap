@@ -5,15 +5,15 @@
 ** Login   <VEYSSI_B@epitech.net>
 **
 ** Started on  Mon Nov 16 16:11:24 2015 Baptiste veyssiere
-** Last update Sat Nov 21 12:20:05 2015 Baptiste veyssiere
+** Last update Sat Nov 21 14:31:43 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
 #include "list.h"
 
-int     my_put_in_list(t_list **list, int nbr, t_list **adress)
+int	my_put_in_list(t_list **list, int nbr, t_list **adress)
 {
-  t_list *elem;
+  t_list	*elem;
 
   elem = malloc(sizeof(*elem));
   if (elem == NULL)

@@ -5,13 +5,13 @@
 ** Login   <VEYSSI_B@epitech.net>
 **
 ** Started on  Mon Nov 16 15:08:57 2015 Baptiste veyssiere
-** Last update Sat Nov 21 12:20:57 2015 Baptiste veyssiere
+** Last update Sat Nov 21 14:31:24 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
 #include "list.h"
 
-int     check(t_list *list)
+int	check(t_list *list)
 {
   int	buffer;
 
@@ -36,7 +36,7 @@ void	function_free(t_list *list1, t_list *list2)
       list1 = list1->next;
       free(adress);
     }
-  while(list2 != NULL)
+  while (list2 != NULL)
     list2 = list2->next;
 }
 

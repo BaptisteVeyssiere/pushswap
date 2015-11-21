@@ -5,16 +5,16 @@
 ** Login   <VEYSSI_B@epitech.net>
 **
 ** Started on  Mon Nov 16 21:56:41 2015 Baptiste veyssiere
-** Last update Sat Nov 21 12:20:42 2015 Baptiste veyssiere
+** Last update Sat Nov 21 14:32:09 2015 Baptiste veyssiere
 */
 
 #include <stdlib.h>
 #include "list.h"
 
-t_min     *who_is_min(t_list *list)
+t_min	*who_is_min(t_list *list)
 {
-  t_min		*min;
-  int		buffer;
+  t_min	*min;
+  int	buffer;
 
   buffer = list->nbr;
   min = malloc(sizeof(*min));
@@ -39,9 +39,9 @@ void	space(int *i)
     my_putchar(' ');
 }
 
-void     list2_filler(t_list **list1, t_list **list2, int ac, int *i)
+void	list2_filler(t_list **list1, t_list **list2, int ac, int *i)
 {
-  t_min   *min;
+  t_min	*min;
 
   min = who_is_min(*list1);
   while ((*list1)->nbr != min->min)
